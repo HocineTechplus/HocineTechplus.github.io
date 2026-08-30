@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>HocineTechplus | البوابة الرسمية</title>
+  <meta name="description" content="منصة HocineTechplus للخدمات والتسجيلات الإلكترونية في الجزائر" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="HocineTechplus">
+        <span class="brand-mark">H+</span>
+        <span>HocineTechplus</span>
+      </a>
+      <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#services">الأقسام</a>
+        <a href="#about">عن المنصة</a>
+      </nav>
+      <a class="nav-cta" href="#services">ابدأ التسجيل</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">البوابة الرسمية</span>
+          <h1>كل خدمات التسجيل الإلكتروني في مكان واحد</h1>
+          <p>اختر القسم المناسب ثم الخدمة التي تحتاجها. واجهة بسيطة، منظمة وسريعة للوصول إلى أهم التسجيلات والخدمات الجزائرية.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#services">استعرض الأقسام</a>
+            <a class="btn secondary" href="#about">تعرف على المنصة</a>
+          </div>
+          <div class="stats">
+            <div><strong>5</strong><span>أقسام رئيسية</span></div>
+            <div><strong>15</strong><span>خدمة فرعية</span></div>
+            <div><strong>24/7</strong><span>وصول للمنصة</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-head">
+            <span class="dot"></span>
+            <span>اختيار سريع للخدمة</span>
+          </div>
+          <div class="quick-list" id="quickList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">الأقسام الرئيسية</span>
+            <h2>اختر القسم ثم الخدمة المطلوبة</h2>
+          </div>
+          <p>اضغط على أي قسم لعرض التسجيلات والخدمات التابعة له.</p>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-card">
+        <div>
+          <span class="eyebrow">HocineTechplus</span>
+          <h2>واجهة منظمة للخدمات الإلكترونية</h2>
+          <p>صُممت هذه الصفحة لتكون نقطة انطلاق واضحة للتسجيلات والخدمات. يمكن لاحقًا ربط كل خدمة برابط رسمي، نموذج تسجيل، واتساب، أو نظام إدارة طلبات كامل.</p>
+        </div>
+        <a class="btn primary" href="#services">اختيار خدمة</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand footer-brand"><span class="brand-mark">H+</span><span>HocineTechplus</span></div>
+        <p>منصة للخدمات والتسجيلات الإلكترونية.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">الرئيسية</a>
+        <a href="#services">الأقسام</a>
+        <a href="#about">عن المنصة</a>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> HocineTechplus</div>
+  </footer>
+
+  <div class="modal" id="serviceModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close="true" aria-label="إغلاق">×</button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <span class="eyebrow" id="modalCategory"></span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-actions">
+        <button class="btn primary" id="startBtn">ابدأ التسجيل الآن</button>
+        <button class="btn secondary" data-close="true">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
