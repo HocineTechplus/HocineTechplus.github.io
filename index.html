@@ -1,111 +1,89 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0f172a" />
-  <title>HocineTechplus | البوابة الرسمية</title>
-  <meta name="description" content="منصة HocineTechplus للخدمات والتسجيلات الإلكترونية في الجزائر" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#4e73df">
+  <title>الصفحة الرسمية | بوابة الخدمات</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="#home" aria-label="HocineTechplus">
-        <span class="brand-mark">H+</span>
-        <span>HocineTechplus</span>
-      </a>
-      <nav>
-        <a href="#home">الرئيسية</a>
-        <a href="#services">الأقسام</a>
-        <a href="#about">عن المنصة</a>
-      </nav>
-      <a class="nav-cta" href="#services">ابدأ التسجيل</a>
-    </div>
-  </header>
+  <main class="page-shell home-shell">
+    <section class="dashboard">
+      <header class="header-section home-header">
+        <div class="hero-icon">🇩🇿</div>
+        <div class="official-pill">الصفحة الرسمية</div>
+        <h1>بوابة الخدمات الإلكترونية الجزائرية</h1>
+        <p>اختر القسم ثم الخدمة التي تريد الوصول إليها.</p>
+      </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">البوابة الرسمية</span>
-          <h1>كل خدمات التسجيل الإلكتروني في مكان واحد</h1>
-          <p>اختر القسم المناسب ثم الخدمة التي تحتاجها. واجهة بسيطة، منظمة وسريعة للوصول إلى أهم التسجيلات والخدمات الجزائرية.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#services">استعرض الأقسام</a>
-            <a class="btn secondary" href="#about">تعرف على المنصة</a>
+      <div class="categories" id="categories">
+        <section class="category-card education open">
+          <button class="category-toggle" type="button" aria-expanded="true">
+            <div class="category-heading">
+              <span class="category-icon">🎓</span>
+              <div><span class="category-kicker">القسم الأول</span><h2>قسم التربية</h2></div>
+            </div>
+            <span class="chevron">⌄</span>
+          </button>
+          <div class="service-grid category-content">
+            <a class="service-link" href="service.html?key=awlyaa"><span class="service-icon">👨‍👩‍👧‍👦</span><div><strong>تسجيلات فضاء الأولياء</strong><small>خدمات الأولياء والمتابعة المدرسية</small></div><span class="arrow">←</span></a>
+            <a class="service-link" href="service.html?key=teachers"><span class="service-icon">👩‍🏫</span><div><strong>تسجيلات فضاء الأساتذة</strong><small>فضاء الخدمات الرقمية للأساتذة</small></div><span class="arrow">←</span></a>
+            <a class="service-link" href="service.html?key=schoolgrant"><span class="service-icon">🎒</span><div><strong>تسجيلات منحة التمدرس</strong><small>خدمة التسجيل والمتابعة</small></div><span class="arrow">←</span></a>
           </div>
-          <div class="stats">
-            <div><strong>5</strong><span>أقسام رئيسية</span></div>
-            <div><strong>15</strong><span>خدمة فرعية</span></div>
-            <div><strong>24/7</strong><span>وصول للمنصة</span></div>
-          </div>
-        </div>
-        <div class="hero-card">
-          <div class="hero-card-head">
-            <span class="dot"></span>
-            <span>اختيار سريع للخدمة</span>
-          </div>
-          <div class="quick-list" id="quickList"></div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="services section" id="services">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">الأقسام الرئيسية</span>
-            <h2>اختر القسم ثم الخدمة المطلوبة</h2>
+        <section class="category-card training">
+          <button class="category-toggle" type="button" aria-expanded="false">
+            <div class="category-heading">
+              <span class="category-icon">🧑‍💻</span>
+              <div><span class="category-kicker">القسم الثاني</span><h2>التكوين والتعليم عن بعد</h2></div>
+            </div>
+            <span class="chevron">⌄</span>
+          </button>
+          <div class="service-grid category-content">
+            <a class="service-link" href="service.html?key=training"><span class="service-icon">🛠️</span><div><strong>تسجيلات التكوين</strong><small>خدمات التسجيل في التكوين</small></div><span class="arrow">←</span></a>
+            <a class="service-link" href="service.html?key=distanceTraining"><span class="service-icon">💻</span><div><strong>تسجيلات التكوين عن بعد</strong><small>التكوين الإلكتروني وعن بعد</small></div><span class="arrow">←</span></a>
+            <a class="service-link" href="service.html?key=onefd"><span class="service-icon">📚</span><div><strong>تسجيلات المراسلة</strong><small>التعليم والتكوين عن بعد</small></div><span class="arrow">←</span></a>
           </div>
-          <p>اضغط على أي قسم لعرض التسجيلات والخدمات التابعة له.</p>
-        </div>
-        <div class="category-grid" id="categoryGrid"></div>
-      </div>
-    </section>
+        </section>
 
-    <section class="about section" id="about">
-      <div class="container about-card">
-        <div>
-          <span class="eyebrow">HocineTechplus</span>
-          <h2>واجهة منظمة للخدمات الإلكترونية</h2>
-          <p>صُممت هذه الصفحة لتكون نقطة انطلاق واضحة للتسجيلات والخدمات. يمكن لاحقًا ربط كل خدمة برابط رسمي، نموذج تسجيل، واتساب، أو نظام إدارة طلبات كامل.</p>
-        </div>
-        <a class="btn primary" href="#services">اختيار خدمة</a>
+        <section class="category-card algeria-sites">
+          <button class="category-toggle" type="button" aria-expanded="false">
+            <div class="category-heading">
+              <span class="category-icon">🌐</span>
+              <div><span class="category-kicker">القسم الثالث</span><h2>المواقع الجزائرية</h2></div>
+            </div>
+            <span class="chevron">⌄</span>
+          </button>
+          <div class="service-grid category-content">
+            <a class="service-link" href="service.html?key=naftal"><span class="service-icon">⛽</span><div><strong>تسجيلات نفطال</strong><small>الوصول إلى خدمات نفطال</small></div><span class="arrow">←</span></a>
+            <a class="service-link" href="service.html?key=servicesPortal"><span class="service-icon">🏛️</span><div><strong>البوابة الرئيسية للخدمات الجزائرية</strong><small>الخدمات العمومية الإلكترونية</small></div><span class="arrow">←</span></a>
+            <a class="service-link" href="service.html?key=landBook"><span class="service-icon">🏠</span><div><strong>تسجيلات الدفتر العقاري</strong><small>الخدمات والوثائق العقارية</small></div><span class="arrow">←</span></a>
+            <a class="service-link" href="service.html?key=cadets"><span class="service-icon">🪖</span><div><strong>تسجيلات أشبال الأمة والجيش</strong><small>معلومات وخدمات التسجيل</small></div><span class="arrow">←</span></a>
+          </div>
+        </section>
+
+        <section class="category-card higher-ed">
+          <button class="category-toggle" type="button" aria-expanded="false">
+            <div class="category-heading">
+              <span class="category-icon">🏫</span>
+              <div><span class="category-kicker">القسم الرابع</span><h2>قسم التعليم العالي</h2></div>
+            </div>
+            <span class="chevron">⌄</span>
+          </button>
+          <div class="service-grid category-content">
+            <a class="service-link" href="service.html?key=universityFirst"><span class="service-icon">📝</span><div><strong>التسجيلات الأولية للجامعة</strong><small>خدمات الطلبة الجدد والتوجيه</small></div><span class="arrow">←</span></a>
+            <a class="service-link" href="service.html?key=universityDistance"><span class="service-icon">🖥️</span><div><strong>تسجيلات الجامعة عن بعد</strong><small>الخدمات الجامعية الرقمية</small></div><span class="arrow">←</span></a>
+            <a class="service-link" href="service.html?key=universityGrant"><span class="service-icon">💳</span><div><strong>تسجيلات المنحة الجامعية</strong><small>خدمات المنحة والمتابعة</small></div><span class="arrow">←</span></a>
+          </div>
+        </section>
       </div>
+
+      <hr class="divider">
+      <p class="footer-note">هذه بوابة توجيهية مستقلة. لا تطلب منك إدخال كلمة مرور أو بيانات حساسة داخل هذه الصفحة؛ استخدم دائمًا الموقع الرسمي للخدمة.</p>
     </section>
   </main>
-
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <div class="brand footer-brand"><span class="brand-mark">H+</span><span>HocineTechplus</span></div>
-        <p>منصة للخدمات والتسجيلات الإلكترونية.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#home">الرئيسية</a>
-        <a href="#services">الأقسام</a>
-        <a href="#about">عن المنصة</a>
-      </div>
-    </div>
-    <div class="copyright">© <span id="year"></span> HocineTechplus</div>
-  </footer>
-
-  <div class="modal" id="serviceModal" aria-hidden="true">
-    <div class="modal-backdrop" data-close="true"></div>
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" data-close="true" aria-label="إغلاق">×</button>
-      <div class="modal-icon" id="modalIcon"></div>
-      <span class="eyebrow" id="modalCategory"></span>
-      <h3 id="modalTitle"></h3>
-      <p id="modalDesc"></p>
-      <div class="modal-actions">
-        <button class="btn primary" id="startBtn">ابدأ التسجيل الآن</button>
-        <button class="btn secondary" data-close="true">إغلاق</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

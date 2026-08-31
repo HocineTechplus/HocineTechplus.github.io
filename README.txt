@@ -1,3 +1,20 @@
-HocineTechplus GitHub Pages ready files.
-Upload index.html, styles.css, app.js and .nojekyll to the root of the repository HocineTechplus.github.io.
-Do NOT upload this ZIP itself if you want GitHub Pages to work directly.
+بوابة الخدمات الإلكترونية - نسخة GitHub Pages
+
+الملفات الأساسية:
+- index.html : الصفحة الرئيسية والأقسام الأربعة.
+- service.html : صفحة موحدة لكل خدمة.
+- styles.css : التصميم والألوان والتجاوب مع الهاتف.
+- script.js : فتح وغلق الأقسام + أسماء الخدمات + روابط المواقع الرسمية.
+
+لإضافة رابط رسمي لخدمة:
+افتح script.js وابحث عن الخدمة ثم ضع الرابط داخل url:'https://...'
+مثال:
+onefd:{...,url:'https://example.dz'}
+
+للنشر على GitHub Pages:
+1. ارفع جميع الملفات إلى المستودع.
+2. افتح Settings > Pages.
+3. اختر Deploy from a branch.
+4. اختر main و /root ثم Save.
+
+ملاحظة أمنية: هذه النسخة لا تجمع كلمات مرور ولا بيانات هوية حساسة.
